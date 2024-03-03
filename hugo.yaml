@@ -1,0 +1,123 @@
+baseURL: https://solivand.dev/
+languageCode: en-us
+title: Soliven.dev
+theme: PaperMod
+
+enableEmoji: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+paginate: 5 # articles per page
+
+minify:
+  disableXML: true
+  # not sure why, but https://kyxie.github.io/en/blog/tech/papermod/ did it!
+  # minifyOutput: true
+
+permalinks:
+  post: "/blog/:title/"
+
+defaultContentLanguage: en
+
+copyright: (c) Danny Solivan 2007-2024
+
+params:
+
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Solivan-Dev
+  author: Danny
+
+  description: "Danny Solivan's personal website. Read about development, writing, and miscellaneous on the blog."
+  keywords: [Blog, Portfolio, Programming, Writing, PaperMod]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  ShowRadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "/home/danny"
+    icon: /apple-touch-icon.png
+    iconHeight: 24
+
+  # home-info mode
+  homeInfoParams:
+    Title: Hi, I'm Danny.
+    Content: I'm an engineer by day, gamer, developer, writer, poet, and Stoic by night. I like thinking and growing my thoughts continuosly. This site serves as my place where I 📚 learn in public and grow my 💻🌱 digital garden.
+
+  socialIcons: # optional
+    - name: "mastodon"
+      url: "https://mastodon.social/@nightconcept"
+    - name: "github"
+      url: "https://github.com/nightconcept"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/daniel-solivan-82289912/"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/solivan-dev-v2/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: Blog
+      name: Blog
+      url: /blog/
+      weight: 10
+    - identifier: About
+      name: About
+      url: /about/
+      weight: 20
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # style: monokai
+    # lineNos: true
