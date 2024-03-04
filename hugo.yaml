@@ -9,7 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-paginate: 5 # articles per page
+paginate: 10 # articles per page
 
 minify:
   disableXML: true
