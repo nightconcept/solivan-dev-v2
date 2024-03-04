@@ -1,6 +1,6 @@
-baseURL: https://solivand.dev/
+baseURL: https://solivan.dev/
 languageCode: en-us
-title: Soliven.dev
+title: solivan.dev
 theme: PaperMod
 
 enableEmoji: true
@@ -26,7 +26,7 @@ copyright: (c) Danny Solivan 2007-2024
 params:
 
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Solivan-Dev
+  title: solivan-Dev
   author: Danny
 
   description: "Danny Solivan's personal website. Read about development, writing, and miscellaneous on the blog."
