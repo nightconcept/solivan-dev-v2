@@ -54,3 +54,5 @@ hugo server
 ## What else have I been doing?
 
 I have been tinkering with homelabbing and diving into [Nix and NixOS](https://nixos.org/). I plan to have another post that talks about my entire journey through Linux and how I landed at Nix and NixOS. I am still wading through (and will eternally be) my [nightconcept/dotfiles](https://github.com/nightconcept/dotfiles) and have been migrating to a Nix-based at [nightconcept/dotfiles-nix](https://github.com/nightconcept/dotfiles-nix).
+
+I have also officially started working as a software engineer at Garmin in October 2023. I have not moved companies, but I move all the way to the other side of campus. That said, I feel like I have even less desire to program outside of work. I do however have a stronger attraction for programming-adjacent activities such as learning all sorts of IT and DevOps things.

@@ -68,7 +68,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: Hi, I'm Danny.
-    Content: I'm an engineer by day, gamer, developer, writer, poet, and Stoic by night. I like thinking and growing my thoughts continuosly. This site serves as my place where I 📚 learn in public and grow my 💻🌱 digital garden.
+    Content: I'm an engineer by day, gamer, developer, writer, poet, and Stoic by night. I like thinking and growing my thoughts continuosly. This site serves as my place where I 📚 [learn in public](https://www.swyx.io/learn-in-public) and grow my 💻🌱 [digital garden](https://maggieappleton.com/garden-history), but more accurately a simple [blog](https://www.ryrob.com/history-of-blogging/).
 
   socialIcons: # optional
     - name: "mastodon"
