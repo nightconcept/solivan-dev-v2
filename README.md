@@ -5,6 +5,5 @@ Personal website and blog using Hugo and Papermod. I switched in March 2024 from
 A mashup of several tutorials and repos, but these in particular:
 
 - [Building a website using Hugo + PaperMod | Kunyang's Blog](https://kyxie.github.io/en/blog/tech/papermod/)
-label:
 - [Getting set up in Hugo | CloudCannon](https://cloudcannon.com/tutorials/hugo-beginner-tutorial/)
 - [Quick start | Hugo](https://gohugo.io/getting-started/quick-start/)
