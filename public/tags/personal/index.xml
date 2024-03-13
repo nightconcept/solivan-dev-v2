@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Personal on solivan.dev</title>
+    <link>https://solivan.dev/tags/personal/</link>
+    <description>Recent content in Personal on solivan.dev</description>
+    <image>
+      <title>solivan.dev</title>
+      <url>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) Danny Solivan 2007-2024</copyright>
+    <lastBuildDate>Wed, 01 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://solivan.dev/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Goals</title>
+      <link>https://solivan.dev/blog/goals/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://solivan.dev/blog/goals/</guid>
+      <description>I have a few different goals with this blog.
+1. Improve my writing skills. (Realistic) This is the number one goal. How am I doing this? By writing a lot. This post will come up just one day after my intro post. I don&amp;rsquo;t have plans to necessarily write everyday, but I will ride whatever wave comes my way. For now, I think every day is sustainable as I am currently on winter break from my MBA classes at West Texas A&amp;amp;M University.</description>
+    </item>
+  </channel>
+</rss>

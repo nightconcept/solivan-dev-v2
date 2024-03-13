@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Politics on solivan.dev</title>
+    <link>https://solivan.dev/tags/politics/</link>
+    <description>Recent content in Politics on solivan.dev</description>
+    <image>
+      <title>solivan.dev</title>
+      <url>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) Danny Solivan 2007-2024</copyright>
+    <lastBuildDate>Fri, 25 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://solivan.dev/tags/politics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Legitimacy of the Supreme Court</title>
+      <link>https://solivan.dev/blog/legitimacy-of-the-supreme-court/</link>
+      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://solivan.dev/blog/legitimacy-of-the-supreme-court/</guid>
+      <description>I love the Supreme Court. I got to see the building last fall. I have read &amp;ldquo;The Nine&amp;rdquo; by Jeffrey Toobin. As a liberal, I love RBG. I love the little snippets of quip and oration from the Justices and the lawyers who need to argue before them. I am not a lawyer, but maybe in another universe, I could have been.
+Things I do not love: the downfall of the past few years.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on solivan.dev</title>
+    <link>https://solivan.dev/tags/blog/</link>
+    <description>Recent content in Blog on solivan.dev</description>
+    <image>
+      <title>solivan.dev</title>
+      <url>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) Danny Solivan 2007-2024</copyright>
+    <lastBuildDate>Tue, 30 Nov 2021 00:00:00 -0800</lastBuildDate>
+    <atom:link href="https://solivan.dev/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is This?</title>
+      <link>https://solivan.dev/blog/what-is-this/</link>
+      <pubDate>Tue, 30 Nov 2021 00:00:00 -0800</pubDate>
+      <guid>https://solivan.dev/blog/what-is-this/</guid>
+      <description>What is the purpose of this website? The combination of the URL &amp;amp; blog name, the sidebar description and this nobody writer all reveal nothing about what this place is. I think the best way to summarize really what this site is: this website is a personal blog which can vary from some common topics that I think about like politics and video games (development sometimes!) to macroeconomics and marriage all in the pursuit of &amp;ldquo;developing&amp;rdquo; better writing.</description>
+    </item>
+  </channel>
+</rss>

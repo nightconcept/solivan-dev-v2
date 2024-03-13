@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.123.6"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>solivan.dev</title>
+<meta name="keywords" content="Blog, Portfolio, Programming, Writing, PaperMod">
+<meta name="description" content="Danny Solivan&#39;s personal website. Read about development, writing, and miscellaneous on the blog.">
+<meta name="author" content="Danny">
+<link rel="canonical" href="https://solivan.dev/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://solivan.dev/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://solivan.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://solivan.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://solivan.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://solivan.dev/favicon-32x32.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://solivan.dev/index.xml">
+<link rel="alternate" hreflang="en" href="https://solivan.dev/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="solivan.dev" />
+<meta property="og:description" content="Danny Solivan&#39;s personal website. Read about development, writing, and miscellaneous on the blog." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://solivan.dev/" /><meta property="og:image" content="https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="og:site_name" content="solivan-Dev" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+
+<meta name="twitter:title" content="solivan.dev"/>
+<meta name="twitter:description" content="Danny Solivan&#39;s personal website. Read about development, writing, and miscellaneous on the blog."/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "solivan.dev",
+  "url": "https://solivan.dev/",
+  "description": "Danny Solivan\u0026#39;s personal website. Read about development, writing, and miscellaneous on the blog.",
+  "thumbnailUrl": "https://solivan.dev/favicon-32x32.png",
+  "sameAs": [
+      "https://mastodon.social/@nightconcept", "https://github.com/nightconcept", "https://linkedin.com/in/daniel-solivan-82289912/"
+  ]
+}
+</script>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://solivan.dev/" accesskey="h" title="/home/danny (Alt + H)">
+                        
+                    <img src="https://solivan.dev/favicon-32x32_hue253cdfc350ffebd408a362148502ddf_2016_0x32_resize_box_3.png" alt="" aria-label="logo"
+                        height="32">/home/danny</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://solivan.dev/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://solivan.dev/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<article class="first-entry home-info">
+    <header class="entry-header">
+        <h1>Hi, I&rsquo;m Danny.</h1>
+    </header>
+    <div class="entry-content">
+        I&rsquo;m an engineer by day, gamer, developer, writer, poet, and Stoic by night. I like thinking and growing my thoughts continuosly. This site serves as my place where I 📚 learn in public and grow my 💻🌱 digital garden.
+    </div>
+    <footer class="entry-footer">
+        <div class="social-icons" >
+    <a href="https://mastodon.social/@nightconcept" target="_blank" rel="noopener noreferrer me"
+        title="Mastodon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M21.58 13.913c-.29 1.469-2.592 3.121-5.238 3.396-1.379.184-2.737.368-4.185.276-2.368-.092-4.237-.551-4.237-.551 0 .184.014.459.043.643.308 2.294 2.317 2.478 4.22 2.57 1.922 0 3.633-.46 3.633-.46l.079 1.653s-1.344.734-3.738.918c-1.32.091-2.96-.092-4.869-.551-4.14-1.102-4.853-5.507-4.961-10.005-.034-1.285-.013-2.57-.013-3.58 0-4.589 3-5.966 3-5.966 1.513-.734 4.11-1.01 6.808-1.01h.067c2.699 0 5.296.276 6.81 1.01 0 0 3 1.377 3 5.967 0 0 .037 3.304-.419 5.69"
+        stroke="currentColor" />
+    <path
+        d="M17.832 8.633v5h-1.978V8.78c0-1.023-.43-1.542-1.29-1.542-.95 0-1.427.616-1.427 1.834v2.655H11.17V9.072c0-1.218-.476-1.834-1.427-1.834-.86 0-1.29.52-1.29 1.542v4.852H6.475V8.633c0-1.022.26-1.834.782-2.434.538-.6 1.243-.909 2.118-.909 1.012 0 1.779.39 2.286 1.169l.492.827.493-.827c.507-.78 1.274-1.169 2.286-1.169.875 0 1.58.308 2.118.909.522.6.782 1.412.782 2.434"
+        fill="currentColor" stroke="none" />
+</svg>
+    </a>
+    <a href="https://github.com/nightconcept" target="_blank" rel="noopener noreferrer me"
+        title="Github">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+    </a>
+    <a href="https://linkedin.com/in/daniel-solivan-82289912/" target="_blank" rel="noopener noreferrer me"
+        title="Linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+    </a>
+</div>
+
+    </footer>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Migrating to Hugo
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is my first post using Hugo, a static site generator, with the PaperMod theme. I migrated from a self-built Svelte-Kit based JAMStack. This gave me an opportunity to use a simpler to manage stack of getting content out there. I got to dip my toes into the world of a front-end web developer.
+Why did I switch? I quickly learned front-end is not for me. I don’t have an eye for colors and style....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-13 15:12:47 -0700 PDT'>March 13, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Migrating to Hugo" href="https://solivan.dev/blog/migrating-to-hugo/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gamedev Log October 2023
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>October was a fairly sparse month for game development. I got a little burned out of aimlessly coding. I was working on breakout in pygame using an Entity-Component-System.
+I started work as a software engineer which has really consumed a lot of my programming energy.
+I started doing game development again this month. I have chosen to use pygame-ce as my framework so that I can work in Python. When I last started in 2020, I had chosen the Love2D framework which used Lua as the programming language....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-01 00:00:00 +0000 UTC'>October 1, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Gamedev Log October 2023" href="https://solivan.dev/blog/gamedev-log-october-2023/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Gamedev Log September 2023
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I started doing game development again this month. I have chosen to use pygame-ce as my framework so that I can work in Python. When I last started in 2020, I had chosen the Love2D framework which used Lua as the programming language. My original thoughts were that I gave up on gamedev because I was working in a language that would never be used outside of programming. There wasn’t enough in Lua itself to keep me fully interested in it, so I abandoned it....</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-09-26 00:00:00 +0000 UTC'>September 26, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Gamedev Log September 2023" href="https://solivan.dev/blog/gamedev-log-september-2023/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Legitimacy of the Supreme Court
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I love the Supreme Court. I got to see the building last fall. I have read “The Nine” by Jeffrey Toobin. As a liberal, I love RBG. I love the little snippets of quip and oration from the Justices and the lawyers who need to argue before them. I am not a lawyer, but maybe in another universe, I could have been.
+Things I do not love: the downfall of the past few years....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-03-25 00:00:00 +0000 UTC'>March 25, 2022</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Legitimacy of the Supreme Court" href="https://solivan.dev/blog/legitimacy-of-the-supreme-court/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Reader to Creator and Execution
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I keep talking and thinking about how I can reach a creator state. It turns out, I am the biggest blocker for reaching that creator state (no surprises there). Self-doubt, imposter syndrome, a fear of putting myself out there are all reasons I have been afraid to push more content. Does anyone care? Who cares? I am doing this for me. To push myself beyond what I am comfortable and capable of right now....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-03-18 00:00:00 +0000 UTC'>March 18, 2022</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Reader to Creator and Execution" href="https://solivan.dev/blog/reader-to-creator-and-execution/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Top 20 of 2021
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here are my top 20 things (besides my wife and buns of course) from 2021. This list is by no means perfect or comprehensive and in no particular order, but things that managed to make it past all the self-filtering at this point in time.
+Vaccines - Obviously, we cannot talk about 2021 without talking about the elephant in the room, COVID-19. After a year of saying “after everything that’s happened,” we (as humans) can now give a giant screw you to COVID....</p>
+  </div>
+  <footer class="entry-footer"><span title='2022-01-08 00:00:00 +0000 UTC'>January 8, 2022</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Top 20 of 2021" href="https://solivan.dev/blog/top-20-of-2021/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Amateur Research
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>“DO YouR OwN resEarCH” as they say since the start of the pandemic. I have been. My #1 source for all COVID-19 related news has been from The New York Times. I remember throughout the early pandemic, I was doing research all day while I worked from home. I was learning all sorts of things about epidemiology, viruses, pandemics, you name it. It felt amazing to be learning all this stuff....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-10 00:00:00 +0000 UTC'>December 10, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Amateur Research" href="https://solivan.dev/blog/amateur-research/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tweets Collected Part 1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I am going to start a collection of what would be Tweets or Twitlongers. All of these will be thoughts too poorly thought out to be it’s own post, but too long to be a tweet. Every numbered section would have been a its own Tweet or Twitlonger
+#1: I think I have something against Twitter. I use it to semi-promote this blog to a very small audience. 18 followers as of this writing....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-09 00:00:00 +0000 UTC'>December 9, 2021</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Tweets Collected Part 1" href="https://solivan.dev/blog/tweets-collected-part-1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Goals
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>I have a few different goals with this blog.
+1. Improve my writing skills. (Realistic) This is the number one goal. How am I doing this? By writing a lot. This post will come up just one day after my intro post. I don’t have plans to necessarily write everyday, but I will ride whatever wave comes my way. For now, I think every day is sustainable as I am currently on winter break from my MBA classes at West Texas A&amp;M University....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-12-01 00:00:00 +0000 UTC'>December 1, 2021</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to Goals" href="https://solivan.dev/blog/goals/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">What is This?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>What is the purpose of this website? The combination of the URL &amp; blog name, the sidebar description and this nobody writer all reveal nothing about what this place is. I think the best way to summarize really what this site is: this website is a personal blog which can vary from some common topics that I think about like politics and video games (development sometimes!) to macroeconomics and marriage all in the pursuit of “developing” better writing....</p>
+  </div>
+  <footer class="entry-footer"><span title='2021-11-30 00:00:00 -0800 PST'>November 30, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Danny</footer>
+  <a class="entry-link" aria-label="post link to What is This?" href="https://solivan.dev/blog/what-is-this/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>(c) Danny Solivan 2007-2024</span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
