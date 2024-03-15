@@ -15,6 +15,14 @@
     <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://solivan.dev/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Migrating to Hugo</title>
+      <link>https://solivan.dev/blog/migrating-to-hugo/</link>
+      <pubDate>Wed, 13 Mar 2024 15:12:47 -0700</pubDate>
+      <guid>https://solivan.dev/blog/migrating-to-hugo/</guid>
+      <description>This is my first post using Hugo, a static site generator, with the PaperMod theme. I migrated from a self-built Svelte-Kit based JAMStack. This gave me an opportunity to use a simpler to manage stack of getting content out there. I got to dip my toes into the world of a front-end web developer.
+Why did I switch? I quickly learned front-end is not for me. I don&amp;rsquo;t have an eye for colors and style.</description>
+    </item>
+    <item>
       <title>Gamedev Log October 2023</title>
       <link>https://solivan.dev/blog/gamedev-log-october-2023/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>

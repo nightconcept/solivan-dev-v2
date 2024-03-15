@@ -74,7 +74,7 @@ I primarily use this for writing and developing on the go. This is also the lapt
 
 - Macbook Pro 2020 M1
 - 16GB RAM
-- 256FB SSD
+- 256GB SSD
 - MacOS Sonoma
 
 ### Play Laptop
@@ -84,7 +84,7 @@ I use this at random times when I don't feel like carrying around my MBP.
 - Dell Latitude 5420
 - Intel i7-1165G7
 - 16GB RAM
-- 256FB SSD
+- 256GB SSD
 - NixOS
 
 ### HTPC
