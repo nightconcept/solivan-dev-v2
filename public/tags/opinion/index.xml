@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Opinion on solivan.dev</title>
+    <title>opinion on solivan.dev</title>
     <link>https://solivan.dev/tags/opinion/</link>
-    <description>Recent content in Opinion on solivan.dev</description>
+    <description>Recent content in opinion on solivan.dev</description>
     <image>
       <title>solivan.dev</title>
       <url>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) Danny Solivan 2007-2024</copyright>
-    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://solivan.dev/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Video Encoding for People in a Hurry</title>
@@ -24,11 +24,11 @@
     <item>
       <title>uses</title>
       <link>https://solivan.dev/blog/uses/</link>
-      <pubDate>Sun, 23 Apr 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://solivan.dev/blog/uses/</guid>
       <description>This page is inspired by Wes Bos&amp;rsquo; uses page and all the others from uses.tech. This page will continually be updated as I change my uses and setup.
-Tech Stack SvelteKit for this site Vercel Hobby for hosting Hardware Computers Desktop This is the primary computer where I spend most of my time at home. I use it for gaming, writing, and coding.
-AMD Ryzen 7 5800X3D 3.4 GHz Octa-core CPU Asus Prime X570-Pro ASRock Radeon 6950 XT OC Formula 16GB LG 34GK950F 34&amp;quot; Ultrawide 144 Hz 1440p Monitor Dell S2421HN 24&amp;quot; 75 Hz 1080p Monitor (Portrait) Corsair Vengeance RGB Pro 32GB (2x2x16GB) DDR4-3200 CL16 RAM Samsung 970 Evo Plus 1 TB M.</description>
+Tech Stack Hugo for this site with PaperMod theme Vercel Hobby for hosting Hardware Computers Desktop This is the primary computer where I spend most of my time at home. I use it for gaming, writing, and coding.
+AMD Ryzen 7 5800X3D 3.</description>
     </item>
     <item>
       <title>Legitimacy of the Supreme Court</title>

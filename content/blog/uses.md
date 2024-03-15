@@ -1,8 +1,8 @@
 ---
 title: uses
-date: 2023-04-23
-updated: 2024-02-05
-lastmod: 2024-02-05
+date: 2022-04-09
+updated: 2024-03-14
+lastmod: 2024-03-14
 ogpublished: 2022-04-09
 tags:
 type: misc
@@ -33,7 +33,7 @@ This page is inspired by [Wes Bos' uses](https://wesbos.com/uses) page and all t
 
 # Tech Stack
 
-- [SvelteKit](https://kit.svelte.dev/) for this site
+- [Hugo](https://gohugo.io/) for this site with [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme
 - [Vercel](https://vercel.com/home) Hobby for hosting
 
 # Hardware
@@ -59,14 +59,14 @@ This is the primary computer where I spend most of my time at home. I use it for
 - [Audioengine D1](https://audioengine.com/shop/components/d1-24-bit-dacheadphone-amp/)
 - [PreSonus Eris E3.5](https://www.presonus.com/products/Eris-E35)
 - [Massdrop x Sennheiser HD6XX Headphones](https://drop.com/buy/massdrop-sennheiser-hd6xx)
-- [Glorious PC Gaming Race GMMK w/ Gateron Brown Switches](https://www.pcgamingrace.com/products/gmmk-full-brown-switch) and [Tai-Hao Sakura Michi Keycaps](https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=6058)
+- [Keychron Q11 Split Staggered Mechanical Keyboard](https://www.keychron.com/products/keychron-q11-qmk-custom-mechanical-keyboard)
 - [Logitech G403 Hero](https://www.logitechg.com/en-us/products/gaming-mice/g403-hero-gaming-mouse.910-005630.html)
 - [Zowie P-SR Mousepad](https://zowie.benq.com/en/product/mouse-pad/sr/p-sr.html)
 - [Logitech C920 HD Webcam](https://www.logitech.com/en-gb/products/webcams/c920-pro-hd-webcam.960-001055.html)
 - [Blue Yeti Microphone](https://www.logitechg.com/en-us/products/streaming-gear/yeti-premium-usb-microphone.988-000100.html)
 - [Rode PSA1 Boom Arm](https://rode.com/en/accessories/stands-bars/psa1)
 - [Huanuo Dual Monitor Mount Stand](https://smile.amazon.com/gp/product/B07X262MRK?psc=1)
-- Dual Boot Windows 10 & [Manjaro](https://manjaro.org/)
+- Dual Boot Windows 11 & [NixOS](https://nixos.org/)
 
 ### Development Laptop & Portable HTPC
 
@@ -77,6 +77,16 @@ I primarily use this for writing and developing on the go. This is also the lapt
 - 256FB SSD
 - MacOS Sonoma
 
+### Play Laptop
+
+I use this at random times when I don't feel like carrying around my MBP.
+
+- Dell Latitude 5420
+- Intel i7-1165G7
+- 16GB RAM
+- 256FB SSD
+- NixOS
+
 ### HTPC
 
 Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or play Spotify for our guests.
@@ -86,7 +96,16 @@ Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or p
 - 256GB SSD
 - MacOS Sonoma
 
-### Home Server (Storage, pi-hole, and Plex Server)
+### "Production" Server (Storage, pi-hole, and Plex Server)
+
+- AMD Ryzen Threadripper 1950x
+- [ROG STRIX X399-E GAMING](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x399-e-gaming-model/)
+- Corsair Vengeance LPX 32GB (4x16GB) DDR4-2800 CL16 RAM & Corsair Vengeance LPX 64GB (2x32GB) DDR4-3200 CL16 RAM
+- 6x [Seagate BarraCuda 8TB 5400RPM HDD](https://www.seagate.com/products/hard-drives/barracuda-hard-drive/) with SnapRAID and MergerFS
+- [EVGA BQ 500W 80+ Bronze Certified Semi-modular PSU](https://www.evga.com/products/product.aspx?pn=110-BQ-0500-K1)
+- [Proxmox VE](https://www.proxmox.com/en/) 8.1
+
+### "Development" Home Server (Storage, pi-hole, and Plex Server)
 
 - [AMD Ryzen 5 3600X 3.8GHz Hexa-Core CPU](https://www.amazon.com/AMD-Ryzen-3600X-12-Thread-Processor/dp/B07SQBFN2D)
 - [ASRock X570 Phantom Gaming 4](https://pg.asrock.com/mb/AMD/X570%20Phantom%20Gaming%204/index.asp)
@@ -148,20 +167,21 @@ Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or p
 
 # Software
 
+See everything at both of my [dotfiles](https://github.com/nightconcept/dotfiles) [repos](https://github.com/nightconcept/dotfiles-nix).
+
 ## Development Tools
 
 - Editor: [VSCode](https://code.visualstudio.com/)
 - Terminal: [Wezterm](https://wezfurlong.org/wezterm/index.html) (MacOS/Linux), [Terminal](https://github.com/microsoft/terminal) (Windows)
-- Shell: [oh-my-zsh](https://ohmyz.sh/)/zsh, [oh-my-posh](https://ohmyposh.dev/)/Powershell, [oh-my-bash](https://ohmybash.nntoan.com/)/bash (Windows)
-- SCM: [GitHub](https://github.com/) w/ [GitHub Desktop](https://desktop.github.com/) and [Self-hosted Gitea](https://about.gitea.com/)
+- Shell: [oh-my-zsh](https://ohmyz.sh/)/zsh, [oh-my-posh](https://ohmyposh.dev/)/Powershell
+- SCM: [GitHub](https://github.com/) w/ [GitHub Desktop](https://desktop.github.com/)
 - Browsers: [Firefox](https://www.mozilla.org/en-US/firefox/new/) personally, [Chrome](https://www.google.com/chrome/index.html) professionally
 - Font: [Fira Code Nerd Fonts](https://www.nerdfonts.com/)
 
 ## Productivity
 
 - [Obsidian](https://obsidian.md/) for note taking
-- [Nextcloud](https://nextcloud.com/) self-hosted personal file syncing
-- [NordPass](https://nordpass.com/) Family for shared use with my wife
+- [Bitwarden](https://bitwarden.com/) Self-hosted Vaultwarden for the family
 - [NordVPN](https://nordvpn.com/) for privacy
 - [Ferdium](https://ferdium.org/) on desktop to aggregate all chat protocols
 - [Google Messages](https://messages.google.com) on mobile
@@ -169,7 +189,6 @@ Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or p
 - [Stretchly](https://hovancik.net/stretchly/) to remind me to rest my eyes and stretch
 - [Rectangle](https://rectangleapp.com/) (MacOS) for Windows-esque window snapping
 - [AltTab](https://alt-tab-macos.netlify.app/) (MacOS) for Windows-esque alt-tabbing
-- [Fig](https://fig.io/) (MacOS) for autocompletion in the terminal
 - [Scoop](https://scoop.sh/) (Windows) for command line installs and package management
 - [Homebrew](https://brew.sh/) (MacOS/Linux) for command line installs and package management
 
@@ -188,6 +207,7 @@ Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or p
 ## Change Log
 
 ---
+- 3-13-2024: Updated keyboards, new laptop, new home server, and software.
 - 2-5-2024: Updated desktop, home server, and software.
 - 10-29-2023: Updated work desktop, various OS versions, tablet, editor, terminal, and podcasts.
 - 4-21-2023: Updated tech stack, desktop, home server, and work laptop.
