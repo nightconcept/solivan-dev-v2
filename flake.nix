@@ -19,10 +19,6 @@
           packages = with pkgs; [
             hugo
           ];
-
-          shellHook = ''
-            exec zsh
-          '';
         };
       }
     );
