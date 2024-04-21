@@ -12,8 +12,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) Danny Solivan 2007-2024</copyright>
-    <lastBuildDate>Thu, 14 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2024 11:57:57 -0700</lastBuildDate>
     <atom:link href="https://solivan.dev/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ergonomic Keyboards Pt1</title>
+      <link>https://solivan.dev/blog/ergo-keyboards-pt1/</link>
+      <pubDate>Sat, 20 Apr 2024 11:57:57 -0700</pubDate>
+      <guid>https://solivan.dev/blog/ergo-keyboards-pt1/</guid>
+      <description>Ergonomic Keyboards, Part 1 The Problem I started work as a software engineer about 7 months ago now. With many long hours sitting and staring at the screen, I realized that my hands and arms were hurting. I also noticed my eyes were hurting, but I resolved that by being more dedicated to following my Stretchly routines (every 20 minutes, start at something 20 ft away for 20 seconds and every hour, take a 2 minute walk).</description>
+    </item>
     <item>
       <title>Migrating to Hugo</title>
       <link>https://solivan.dev/blog/migrating-to-hugo/</link>
