@@ -11,7 +11,7 @@ hugo
 
 Make a new post (creates a new Markdown file in designated folder using archetypes/default.md as a template):
 ```
-hugo new content/blog/post.md
+hugo new blog/post.md
 ```
 
 ## Inspirations
