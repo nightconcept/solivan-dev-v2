@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>opinion on solivan.dev</title>
+    <title>Opinion on solivan.dev</title>
     <link>https://solivan.dev/tags/opinion/</link>
-    <description>Recent content in opinion on solivan.dev</description>
+    <description>Recent content in Opinion on solivan.dev</description>
     <image>
       <title>solivan.dev</title>
       <url>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -12,8 +12,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) Danny Solivan 2007-2024</copyright>
-    <lastBuildDate>Sat, 20 Apr 2024 11:57:57 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2024 10:28:03 -0800</lastBuildDate>
     <atom:link href="https://solivan.dev/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A New Path</title>
+      <link>https://solivan.dev/blog/a-new-path/</link>
+      <pubDate>Wed, 06 Nov 2024 10:28:03 -0800</pubDate>
+      <guid>https://solivan.dev/blog/a-new-path/</guid>
+      <description>So, the election happened. Ignoring policy differences, I think my biggest grievance is we chose an angry, immature man to run the most powerful country in the world. I do not want to be in a world where this is OK especially for my children. We should be able to respectfully disagree with each other and move on. However, the ballots showed that as long as he delivers the economy this is OK.</description>
+    </item>
     <item>
       <title>Ergonomic Keyboards Pt1</title>
       <link>https://solivan.dev/blog/ergo-keyboards-pt1/</link>
