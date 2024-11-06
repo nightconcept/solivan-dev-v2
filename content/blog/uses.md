@@ -1,7 +1,7 @@
 ---
 title: uses
 date: 2022-04-09
-updated: 2024-03-14
+updated: 2024-11-06
 lastmod: 2024-03-14
 ogpublished: 2022-04-09
 tags:
@@ -65,8 +65,8 @@ This is the primary computer where I spend most of my time at home. I use it for
 - [Logitech C920 HD Webcam](https://www.logitech.com/en-gb/products/webcams/c920-pro-hd-webcam.960-001055.html)
 - [Blue Yeti Microphone](https://www.logitechg.com/en-us/products/streaming-gear/yeti-premium-usb-microphone.988-000100.html)
 - [Rode PSA1 Boom Arm](https://rode.com/en/accessories/stands-bars/psa1)
-- [Huanuo Dual Monitor Mount Stand](https://smile.amazon.com/gp/product/B07X262MRK?psc=1)
-- Dual Boot Windows 11 & [NixOS](https://nixos.org/)
+- [Huanuo Dual Monitor Mount Stand](https://www.amazon.com/gp/product/B07X262MRK?psc=1)
+- Dual Boot Windows 11 & [Fedora](https://fedoraproject.org/)
 
 ### Development Laptop & Portable HTPC
 
@@ -85,7 +85,7 @@ I use this at random times when I don't feel like carrying around my MBP.
 - Intel i7-1165G7
 - 16GB RAM
 - 256GB SSD
-- NixOS
+- Fedora
 
 ### HTPC
 
@@ -107,13 +107,13 @@ Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or p
 
 ### "Development" Home Server (Storage, pi-hole, and Plex Server)
 
-- [AMD Ryzen 5 3600X 3.8GHz Hexa-Core CPU](https://www.amazon.com/AMD-Ryzen-3600X-12-Thread-Processor/dp/B07SQBFN2D)
+- AMD Ryzen 9 5900X 12-Core 3.7GHz
 - [ASRock X570 Phantom Gaming 4](https://pg.asrock.com/mb/AMD/X570%20Phantom%20Gaming%204/index.asp)
 - Corsair Vengeance LPX 32GB (2x16GB) DDR4-3200 CL16 RAM & Corsair Vengeance LPX 64GB (2x32GB) DDR4-3200 CL16 RAM
 - 3x [Seagate BarraCuda 4TB 5400RPM HDD](https://www.seagate.com/products/hard-drives/barracuda-hard-drive/) in RAID 5
 - 3x [Seagate BarraCuda 8TB 5400RPM HDD](https://www.seagate.com/products/hard-drives/barracuda-hard-drive/) in RAID 5
 - [EVGA BQ 500W 80+ Bronze Certified Semi-modular PSU](https://www.evga.com/products/product.aspx?pn=110-BQ-0500-K1)
-- [Ubuntu](https://ubuntu.com/) 22.04 LTS
+- [EndeavourOS](https://endeavouros.com/)
 
 ### Work Desktop
 
@@ -121,7 +121,7 @@ Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or p
 - Intel 10th Generation Core i9-10980XE 3.2GHz
 - AMD Radeon PRO WX3200
 - 64GB RAM
-- Windows 10
+- Windows 11
 
 ## Mobile
 
@@ -167,7 +167,9 @@ Dedicated computer for our Sony 55" 4K TV downstairs that we watch shows on or p
 
 # Software
 
-See everything at both of my [dotfiles](https://github.com/nightconcept/dotfiles) [repos](https://github.com/nightconcept/dotfiles-nix).
+I use a[automatic-os-setup](https://github.com/nightconcept/automatic-os-setup) to imperatively configure my OS as I need some system packages installed.
+
+I use [dotfiles](https://github.com/nightconcept/dotfiles-nix) with Nix package manager with home manager to install user-level packages I need onto any *nix systems. 
 
 ## Development Tools
 
@@ -207,6 +209,7 @@ See everything at both of my [dotfiles](https://github.com/nightconcept/dotfiles
 ## Change Log
 
 ---
+- 11-6-2024: Updated play laptop, home server, and software.
 - 3-13-2024: Updated keyboards, new laptop, new home server, and software.
 - 2-5-2024: Updated desktop, home server, and software.
 - 10-29-2023: Updated work desktop, various OS versions, tablet, editor, terminal, and podcasts.
