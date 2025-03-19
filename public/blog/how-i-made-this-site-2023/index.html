@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>How I Made This Site (2023 Edition) | /home/danny</title>
+<meta name="keywords" content="web-dev">
+<meta name="description" content="Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.
+My goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023. If you want step-by-step guides, here are some that I used or referred to:">
+<meta name="author" content="Danny">
+<link rel="canonical" href="https://solivan.dev/blog/how-i-made-this-site-2023/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://solivan.dev/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://solivan.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://solivan.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://solivan.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://solivan.dev/favicon-32x32.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://solivan.dev/blog/how-i-made-this-site-2023/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://solivan.dev/blog/how-i-made-this-site-2023/">
+  <meta property="og:site_name" content="/home/danny">
+  <meta property="og:title" content="How I Made This Site (2023 Edition)">
+  <meta property="og:description" content="Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.
+My goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023. If you want step-by-step guides, here are some that I used or referred to:">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-04-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-04-24T00:00:00+00:00">
+    <meta property="article:tag" content="Web-Dev">
+      <meta property="og:image" content="https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name="twitter:title" content="How I Made This Site (2023 Edition)">
+<meta name="twitter:description" content="Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.
+My goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023. If you want step-by-step guides, here are some that I used or referred to:">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blogs",
+      "item": "https://solivan.dev/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "How I Made This Site (2023 Edition)",
+      "item": "https://solivan.dev/blog/how-i-made-this-site-2023/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How I Made This Site (2023 Edition)",
+  "name": "How I Made This Site (2023 Edition)",
+  "description": "Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.\nMy goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023. If you want step-by-step guides, here are some that I used or referred to:\n",
+  "keywords": [
+    "web-dev"
+  ],
+  "articleBody": "Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.\nMy goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023. If you want step-by-step guides, here are some that I used or referred to:\nLet’s learn SvelteKit by building a static Markdown blog from scratch Embed Media Components using MDX (Pre-SvelteKit 1.0) Using mdsvex with SvelteKit (Markdown + Svelte!) (Pre-SvelteKit 1.0) sw-yx/swyxkit: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for SvelteKit 1.0! Story Time A short history about me, I had previously done “web development” in grade school coding just HTML. I “discovered” CSS around middle school and did my layouts via tables (this was in vogue at the time, I swear). I eventually took a web development class in high school which then amounted to just re-learning HTML and CSS.\nFast forward about a decade and I am discovering the entire node, JS, and React ecosystem. I absolutely hate it and I can’t make heads or tails of it. I definitely went about it the wrong way going from the tooling of React and every library I should be using towards learning JS. As in, I tried tolearn everything in reverse. I did not make it very far.\nMaybe 7 years later, I happened to find the State of JS survey for 2022. I saw that Svelte was the newest hot framework over React. I went to YouTube to find out how to use it. My mind was blown. Gone were the days of returning HTML code and using a library for state management. The future was here where I could just write HTML code with JS to augment it in a simple fashion.\nPre-SvelteKit 1.0 Notes Somewhere during the initial inception of this site (March 2022) and today (April 2023), SvelteKit hit 1.0. This shift affected me greatly as I was not keeping up with web development at all and I didn’t expect such consequential changes. The thing that hit me the most was the routing changes to no longer lead to .svelte files, but to the +page.svelte file and now relies on folders to determine the name of the route. My main complaint with this method is that I now have many, many +page.svelte files open and I’m not always 100% sure which route it pertains to. I do get the benefit of the other “+” named files which do help clarify explicitly which each does, but I liked the simplicity of the file name = route structure of the framework.\nAnyways, that’s my rant about the changes. I still like SvelteKit overall and will continue to use it for this site until I find a reason to switch to the new shiny toy and I need to refresh my development skills. (Isn’t it obvious I take lots of breaks from web development?)\nMy final note is that the rest of the guide will retcon history that I started coding on SvelteKit 1.0 in the first place unless specifically mentioned.\nGuide Time or “So you want to build a JAMstack?” Design OK, what is a JAMstack? The JAM stands for JavaScript, API, and Markup. However, JAMstack is defined as the following by Jamstack:\nJamstack is an architectural approach that decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability. Jamstack removes the need for business logic to dictate the web experience.\nIt enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.\nNow what does this mean in more specific terms? Your website (consisting of typically HTML/CSS/JS) is seperated from the data. This lets you change things like your layout or tech (ex: I want to move from React to Svelte). This decoupling (if implemented correctly) will make changes for (worst case someone else who doesn’t like your tech choices) you to change part of the tech stack without having to start from the beginning.\nThis guide will use the following for each level:\nJavascript - Language/File-type: Svelte \u0026 Typescript - This will handle all the user interaction and talk to the API. APIs - Language/File-type: Typescript - The API that runs this site simply has to access the Markdown files. No databases were used in the creation of this site. Markup - Language/File-type: Markdown - I used simple Markdown files with the mdsvex library designed for Svelte. Setup I’m not going to go deep dive into pre-requisites and setup instructions. You can find the general “Getting Started” sections of the various tools I used. Also, I am primarily a Windows user due to my work and I spend most of my time on a Windows PC for gaming at home. I do however have a Mac I use to also develop and a Linux partition for when I’m feeling bored.\nThe Tools scoop - Command-line installer for Windows which is used to install all of the following tools. fnm - Fast node manager for picking which version of node you’ll run on your machine. Considered faster than nvm which does something similar. pnpm - Faster and more effective (spacewise) node package manager than npm. It runs almost exactly the same as when calling the npm command. vscodium - Open-source and telemetry free version of VSCode. Looks/feels almost exactly the same as VSCode. Disclaimer: I understand there may be better use-cases for the other tools like nvm or npm or VSCode, but I found these to fit my personal needs without compromising the usability of tutorials on the web by picking something a little less mainstream/non-interopable.\nMarkup - Markdown We’ll start at the “back” of the overall stack. Jamstacks inherently do not have a database. In most cases you would use a Jamstack for a static website that does not rely on data stored in a database. If you haven’t learned how to use Markdown in your coding career, you should do so. It is the defacto markup language for every readme file. For this site, I simply stored it in a src/data/posts. This does not conflict with the SvelteKit project structure. As mentioned before, mdsvex is the library to use to be able to render Markdown files.\nAPI This is the layer I had the most trouble with. This is however mostly because I do not have a lot of experience with JavaScript/TypeScript. I have gone through the excellent freeCodeCamp tutorials in JavaScript, but my poor practice and reptition made me forget.\nThere are two primary APIs that exist:\nsrc/routes/api/posts.json - This endpoint lists all of the markdown files contained in src/data/posts in sorted order by data in the frontmatter. My biggest challenge here was getting the glob to work correctly. It was really hard for me to determine the pathing to the file. I wanted to store the markdown files in the /static folder, but I get warnings for doing that. This endpoint is called on the “index” of the routes folder (src/routes/+page.svelte) and on the blog page. src/lib/server/posts.ts - This endpoint is actually called when src/routes/blog/[slug]/+page.ts is called. posts.ts searches for the appropriate .md file with [slug] in the name and returns it. For something as simple as a blog, not much else is needed. Each API can vary a bit depending on what you want to show. I’ve seen some Jamstacks return previous/next posts relative to the current one. You can also do features like “series” that return almost like a linked list of files.\nFrontend This layer consists of Svelte, TypeScript, HTML, and CSS files. Svelte is a very easy framework to work with as it writes just like HTML with some “Svelte-isms” embedded within. TypeScript files are used to function as “on load” type events (specifically +page.ts) whenever that page is loaded.\nHow to properly use CSS is a bit of a polarizing topic in the web development community. On one end, CSS frameworks provide plenty of already written CSS code so you don’t have to. On the other end, CSS frameworks are viewed as bloated and too opinionated. At the end of the day, both solutions have trade-offs and you need to choose the one that’s best for your usecase. I do not have an eye for design, nor do I want to spend time writing CSS code, so I opted to use Tailwind CSS. My goal was to learn to build a site, not write CSS all day.\nLet’s DEPLOY Local development is pretty easy. Just run pnpm dev! Now what? Back in my day, I used to have to manually drag and drop files through an FTP server! Nowadays, the whole deployment pipeline is streamlined thanks to sites like Vercel and Netlify. These sites can link up a GitHub repo that is automatically deployed every time you push (or as you define it) and also provide effectively give you free hosting below a certain bandwidth and storage space. This is definitely amazing developer experience. Here’s the gist of the deployment chain I use:\nPush to GitHub - Usually on main for better or worse. Sometimes on a branch if I am working on a new feature I don’t want to deploy yet. Vercel also has automated preview branches that take in changes to a branch which is prety neat. GitHub Actions happen - We’ll go into detail what I currently run below! Vercel deployment - This technically happens as a part of GitHub Actions, but I wanted to keep it as a distinct section of the deployment chain. Disclaimer: This site is hosted on Vercel. I am not sponsored by them and everything positive I say is because of my own personal experience.\nGitHub Actions CodeQL - This is my very first GitHub action I implemented. The marketplace makes it really easy to stick in actions. This essentially performs security checks on your code. Low friction to set up makes it a no-brainer. Nightly pnpm-lock.json update Playwright automated testing - First time successfully getting testing working. Very easy to use the Playwright CLI to start building navigation. Dependabot - I learned what it actually does after seeing it in so many places in GitHub repos. It just helps you keep some critical dependencies up to date especially for security purposes. Using the yml file is better than just clicking the settings file because it clearly signals that you follow secure practices. Vercel That’s all folks! There you have it, a general and very abridged version of how this site was built. Hopefully this may be useful for you, but if not I’ll tell you this will be useful for me in the future when I have forgotten how and why I did everything the way I did it.\n",
+  "wordCount" : "1848",
+  "inLanguage": "en",
+  "image": "https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E","datePublished": "2023-04-24T00:00:00Z",
+  "dateModified": "2023-04-24T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Danny"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://solivan.dev/blog/how-i-made-this-site-2023/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "/home/danny",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://solivan.dev/favicon-32x32.png"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://solivan.dev/" accesskey="h" title="/home/danny (Alt + H)">
+                <img src="https://solivan.dev/favicon-32x32.png" alt="" aria-label="logo"
+                    height="32">/home/danny</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://solivan.dev/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://solivan.dev/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://solivan.dev/">Home</a>&nbsp;»&nbsp;<a href="https://solivan.dev/blog/">Blogs</a></div>
+    <h1 class="post-title entry-hint-parent">
+      How I Made This Site (2023 Edition)
+    </h1>
+    <div class="post-meta"><span title='2023-04-24 00:00:00 +0000 UTC'>April 24, 2023</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Danny
+
+</div>
+  </header> 
+  <div class="post-content"><p>Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.</p>
+<p>My goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023. If you want step-by-step guides, here are some that I used or referred to:</p>
+<ul>
+<li><a href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog">Let&rsquo;s learn SvelteKit by building a static Markdown blog from scratch</a></li>
+<li><a href="https://cloudinary.com/blog/guest_post/Embed-media-components-using-MDX-and-SvelteKit">Embed Media Components using MDX</a> (Pre-SvelteKit 1.0)</li>
+<li><a href="https://www.youtube.com/watch?v=LutB0Ih0nXQ">Using mdsvex with SvelteKit (Markdown + Svelte!)</a> (Pre-SvelteKit 1.0)</li>
+<li><a href="https://github.com/sw-yx/swyxkit">sw-yx/swyxkit: An opinionated blog starter for SvelteKit + Tailwind + Netlify. Refreshed for SvelteKit 1.0!</a></li>
+</ul>
+<h2 id="story-time">Story Time<a hidden class="anchor" aria-hidden="true" href="#story-time">#</a></h2>
+<p>A short history about me, I had previously done &ldquo;web development&rdquo; in grade school coding just HTML. I &ldquo;discovered&rdquo; CSS around middle school and did my layouts via tables (this was in vogue at the time, I swear). I eventually took a web development class in high school which then amounted to just re-learning HTML and CSS.</p>
+<p>Fast forward about a decade and I am discovering the entire node, JS, and React ecosystem. I absolutely hate it and I can&rsquo;t make heads or tails of it. I definitely went about it the wrong way going from the tooling of React and every library I should be using towards learning JS. As in, I tried tolearn everything in reverse. I did not make it very far.</p>
+<p>Maybe 7 years later, I happened to find the State of JS survey for 2022. I saw that Svelte was the newest hot framework over React. I went to YouTube to find out how to use it. My mind was blown. Gone were the days of returning HTML code and using a library for state management. The future was here where I could just write HTML code with JS to augment it in a simple fashion.</p>
+<h2 id="pre-sveltekit-10-notes">Pre-SvelteKit 1.0 Notes<a hidden class="anchor" aria-hidden="true" href="#pre-sveltekit-10-notes">#</a></h2>
+<p>Somewhere during the initial inception of this site (March 2022) and today (April 2023), SvelteKit hit 1.0. This shift affected me greatly as I was not keeping up with web development at all and I didn&rsquo;t expect such consequential changes. The thing that hit me the most was the routing changes to no longer lead to .svelte files, but to the +page.svelte file and now relies on folders to determine the name of the route. My main complaint with this method is that I now have many, many +page.svelte files open and I&rsquo;m not always 100% sure which route it pertains to. I do get the benefit of the other &ldquo;+&rdquo; named files which do help clarify explicitly which each does, but I liked the simplicity of the file name = route structure of the framework.</p>
+<p>Anyways, that&rsquo;s my rant about the changes. I still like SvelteKit overall and will continue to use it for this site until I find a reason to switch to the new shiny toy <em>and</em> I need to refresh my development skills. (Isn&rsquo;t it obvious I take lots of breaks from web development?)</p>
+<p>My final note is that the rest of the guide will retcon history that I started coding on SvelteKit 1.0 in the first place unless specifically mentioned.</p>
+<h2 id="guide-time-or-so-you-want-to-build-a-jamstack">Guide Time or &ldquo;So you want to build a JAMstack?&rdquo;<a hidden class="anchor" aria-hidden="true" href="#guide-time-or-so-you-want-to-build-a-jamstack">#</a></h2>
+<h3 id="design">Design<a hidden class="anchor" aria-hidden="true" href="#design">#</a></h3>
+<p>OK, what is a JAMstack? The JAM stands for JavaScript, API, and Markup. However, JAMstack is defined as the following by <a href="https://jamstack.com/">Jamstack</a>:</p>
+<blockquote>
+<p>Jamstack is an architectural approach that decouples the web experience layer from data and business logic, improving flexibility, scalability, performance, and maintainability. Jamstack removes the need for business logic to dictate the web experience.</p>
+<p>It enables a composable architecture for the web where custom logic and 3rd party services are consumed through APIs.</p></blockquote>
+<p>Now what does this mean in more specific terms? Your website (consisting of typically HTML/CSS/JS) is seperated from the data. This lets you change things like your layout or tech (ex: I want to move from React to Svelte). This decoupling (if implemented correctly) will make changes for (worst case someone else who doesn&rsquo;t like your tech choices) you to change part of the tech stack without having to start from the beginning.</p>
+<p>This guide will use the following for each level:</p>
+<ul>
+<li>Javascript - <em>Language/File-type: Svelte &amp; Typescript</em> - This will handle all the user interaction and talk to the API.</li>
+<li>APIs - <em>Language/File-type: Typescript</em> - The API that runs this site simply has to access the Markdown files. No databases were used in the creation of this site.</li>
+<li>Markup - <em>Language/File-type: Markdown</em> - I used simple Markdown files with the <a href="https://mdsvex.com/">mdsvex</a> library designed for Svelte.</li>
+</ul>
+<h3 id="setup">Setup<a hidden class="anchor" aria-hidden="true" href="#setup">#</a></h3>
+<p>I&rsquo;m not going to go deep dive into pre-requisites and setup instructions. You can find the general &ldquo;Getting Started&rdquo; sections of the various tools I used. Also, I am primarily a Windows user due to my work and I spend most of my time on a Windows PC for gaming at home. I do however have a Mac I use to also develop and a Linux partition for when I&rsquo;m feeling bored.</p>
+<h4 id="the-tools">The Tools<a hidden class="anchor" aria-hidden="true" href="#the-tools">#</a></h4>
+<ul>
+<li><code>scoop</code> - Command-line installer for Windows which is used to install all of the following tools.</li>
+<li><code>fnm</code> - Fast node manager for picking which version of node you&rsquo;ll run on your machine. Considered faster than <code>nvm</code> which does something similar.</li>
+<li><code>pnpm</code> - Faster and more effective (spacewise) node package manager than <code>npm</code>. It runs almost exactly the same as when calling the <code>npm</code> command.</li>
+<li><code>vscodium</code> - Open-source and telemetry free version of VSCode. Looks/feels almost exactly the same as VSCode.</li>
+</ul>
+<p><em>Disclaimer: I understand there may be better use-cases for the other tools like nvm or npm or VSCode, but I found these to fit my personal needs without compromising the usability of tutorials on the web by picking something a little less mainstream/non-interopable.</em></p>
+<h3 id="markup---markdown">Markup - Markdown<a hidden class="anchor" aria-hidden="true" href="#markup---markdown">#</a></h3>
+<p>We&rsquo;ll start at the &ldquo;back&rdquo; of the overall stack. Jamstacks inherently do not have a database. In most cases you would use a Jamstack for a static website that does not rely on data stored in a database. If you haven&rsquo;t learned how to use Markdown in your coding career, you should do so. It is the defacto markup language for every readme file. For this site, I simply stored it in a <code>src/data/posts</code>. This does not conflict with the <a href="https://kit.svelte.dev/docs/project-structure">SvelteKit project structure</a>. As mentioned before, mdsvex is the library to use to be able to render Markdown files.</p>
+<h3 id="api">API<a hidden class="anchor" aria-hidden="true" href="#api">#</a></h3>
+<p>This is the layer I had the most trouble with. This is however mostly because I do not have a lot of experience with JavaScript/TypeScript. I have gone through the excellent <a href="https://www.freecodecamp.org/">freeCodeCamp</a> tutorials in JavaScript, but my poor practice and reptition made me forget.</p>
+<p>There are two primary APIs that exist:</p>
+<ul>
+<li><code>src/routes/api/posts.json</code> - This endpoint lists all of the markdown files contained in <code>src/data/posts</code> in sorted order by data in the frontmatter. My biggest challenge here was getting the glob to work correctly. It was really hard for me to determine the pathing to the file. I wanted to store the markdown files in the <code>/static</code> folder, but I get warnings for doing that. This endpoint is called on the &ldquo;index&rdquo; of the routes folder (<code>src/routes/+page.svelte</code>) and on the blog page.</li>
+<li><code>src/lib/server/posts.ts</code> - This endpoint is actually called when <code>src/routes/blog/[slug]/+page.ts</code> is called. posts.ts searches for the appropriate .md file with [slug] in the name and returns it.</li>
+</ul>
+<p>For something as simple as a blog, not much else is needed. Each API can vary a bit depending on what you want to show. I&rsquo;ve seen some Jamstacks return previous/next posts relative to the current one. You can also do features like &ldquo;series&rdquo; that return almost like a linked list of files.</p>
+<h3 id="frontend">Frontend<a hidden class="anchor" aria-hidden="true" href="#frontend">#</a></h3>
+<p>This layer consists of Svelte, TypeScript, HTML, and CSS files. Svelte is a very easy framework to work with as it writes just like HTML with some &ldquo;Svelte-isms&rdquo; embedded within. TypeScript files are used to function as &ldquo;on load&rdquo; type events (specifically +page.ts) whenever that page is loaded.</p>
+<p>How to properly use CSS is a bit of a polarizing topic in the web development community. On one end, CSS frameworks provide plenty of already written CSS code so you don&rsquo;t have to. On the other end, CSS frameworks are viewed as bloated and too opinionated. At the end of the day, both solutions have trade-offs and you need to choose the one that&rsquo;s best for your usecase. I do not have an eye for design, nor do I want to spend time writing CSS code, so I opted to use <a href="https://tailwindcss.com/">Tailwind CSS</a>. My goal was to learn to build a site, not write CSS all day.</p>
+<h2 id="lets-deploy">Let&rsquo;s DEPLOY<a hidden class="anchor" aria-hidden="true" href="#lets-deploy">#</a></h2>
+<p>Local development is pretty easy. Just run <code>pnpm dev</code>! Now what? <em>Back in my day,</em> I used to have to manually drag and drop files through an FTP server! Nowadays, the whole deployment pipeline is streamlined thanks to sites like <a href="https://vercel.com/home">Vercel</a> and <a href="https://www.netlify.com/">Netlify</a>. These sites can link up a GitHub repo that is automatically deployed every time you push (or as you define it) and also provide effectively give you free hosting below a certain bandwidth and storage space. This is definitely amazing developer experience. Here&rsquo;s the gist of the deployment chain I use:</p>
+<ol>
+<li>Push to GitHub - Usually on main for better or worse. Sometimes on a branch if I am working on a new feature I don&rsquo;t want to deploy yet. Vercel also has automated preview branches that take in changes to a branch which is prety neat.</li>
+<li>GitHub Actions happen - We&rsquo;ll go into detail what I currently run below!</li>
+<li>Vercel deployment - This technically happens as a part of GitHub Actions, but I wanted to keep it as a distinct section of the deployment chain.</li>
+</ol>
+<p><em>Disclaimer: This site is hosted on Vercel. I am not sponsored by them and everything positive I say is because of my own personal experience.</em></p>
+<h3 id="github-actions">GitHub Actions<a hidden class="anchor" aria-hidden="true" href="#github-actions">#</a></h3>
+<ul>
+<li>CodeQL - This is my very first GitHub action I implemented. The marketplace makes it really easy to stick in actions. This essentially performs security checks on your code. Low friction to set up makes it a no-brainer.</li>
+<li>Nightly pnpm-lock.json update</li>
+<li>Playwright automated testing - First time successfully getting testing working. Very easy to use the Playwright CLI to start building navigation.</li>
+<li>Dependabot - I learned what it actually does after seeing it in so many places in GitHub repos. It just helps you keep some critical dependencies up to date especially for security purposes. Using the yml file is better than just clicking the settings file because it clearly signals that you follow secure practices.</li>
+<li>Vercel</li>
+</ul>
+<h2 id="thats-all-folks">That&rsquo;s all folks!<a hidden class="anchor" aria-hidden="true" href="#thats-all-folks">#</a></h2>
+<p>There you have it, a general and very abridged version of how this site was built. Hopefully this may be useful for you, but if not I&rsquo;ll tell you this will be useful for me in the future when I have forgotten how and why I did everything the way I did it.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://solivan.dev/tags/web-dev/">Web-Dev</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>(c) Danny Solivan 2007-2024</span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
