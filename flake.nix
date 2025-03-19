@@ -18,6 +18,7 @@
         devShell = pkgs.mkShell {
           packages = with pkgs; [
             hugo
+            pre-commit
           ];
         };
       }

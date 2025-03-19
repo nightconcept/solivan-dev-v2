@@ -14,6 +14,14 @@ Make a new post (creates a new Markdown file in designated folder using archetyp
 hugo new blog/post.md
 ```
 
+Commit to post (successful commit to GitHub should result in a new deployment):
+```
+// If hook was changed or not already setup before in that repo
+pre-commit install
+
+pre-commit
+```
+
 ## Inspirations
 
 A mashup of several tutorials and repos, but these in particular:

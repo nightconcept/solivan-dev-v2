@@ -1,12 +1,4 @@
-# .pre-commit-config.yaml
 repos:
-- repo: local
-  hooks:
-    - id: hugo-build
-      name: Build Hugo Site
-      entry: hugo build
-      language: system
-      pass_filenames: false
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0  # this is optional, use `pre-commit autoupdate` to get the latest rev!
     hooks:
@@ -22,10 +14,3 @@ repos:
         args: [ --indent "   " ]
       - id: trailing-whitespace
         args: [ --markdown-linebreak-ext=md ]
-- repo: local
-  hooks:
-    - id: git-add-all
-      name: Add all Hugo generated files and format fixes
-      entry: git add -A
-      language: system
-      pass_filenames: false
