@@ -9,7 +9,7 @@
       <url>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- 0.138.0</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) Danny Solivan 2007-2024</copyright>
     <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate>
@@ -19,16 +19,16 @@
       <link>https://solivan.dev/blog/gamedev-log-october-2023/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://solivan.dev/blog/gamedev-log-october-2023/</guid>
-      <description>&lt;p&gt;October was a fairly sparse month for game development. I got a little burned out of aimlessly coding. I was working on breakout in pygame using an &lt;a href=&#34;https://en.wikipedia.org/wiki/Entity_component_system&#34;&gt;Entity-Component-System&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I started work as a software engineer which has really consumed a lot of my programming energy.&lt;/p&gt;
-&lt;p&gt;I started doing game development again this month. I have chosen to use &lt;a href=&#34;https://pyga.me/&#34;&gt;pygame-ce&lt;/a&gt; as my framework so that I can work in Python. When I last started in 2020, I had chosen the &lt;a href=&#34;https://love2d.org/&#34;&gt;Love2D&lt;/a&gt; framework which used Lua as the programming language. My original thoughts were that I gave up on gamedev because I was working in a language that would never be used outside of programming. There wasn&amp;rsquo;t enough in Lua itself to keep me fully interested in it, so I abandoned it.&lt;/p&gt;</description>
+      <description>October was a fairly sparse month for game development. I got a little burned out of aimlessly coding. I was working on breakout in pygame using an Entity-Component-System.
+I started work as a software engineer which has really consumed a lot of my programming energy.
+I started doing game development again this month. I have chosen to use pygame-ce as my framework so that I can work in Python. When I last started in 2020, I had chosen the Love2D framework which used Lua as the programming language.</description>
     </item>
     <item>
       <title>Gamedev Log September 2023</title>
       <link>https://solivan.dev/blog/gamedev-log-september-2023/</link>
       <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://solivan.dev/blog/gamedev-log-september-2023/</guid>
-      <description>&lt;p&gt;I started doing game development again this month. I have chosen to use &lt;a href=&#34;https://pyga.me/&#34;&gt;pygame-ce&lt;/a&gt; as my framework so that I can work in Python. When I last started in 2020, I had chosen the &lt;a href=&#34;https://love2d.org/&#34;&gt;Love2D&lt;/a&gt; framework which used Lua as the programming language. My original thoughts were that I gave up on gamedev because I was working in a language that would never be used outside of programming. There wasn&amp;rsquo;t enough in Lua itself to keep me fully interested in it, so I abandoned it.&lt;/p&gt;</description>
+      <description>I started doing game development again this month. I have chosen to use pygame-ce as my framework so that I can work in Python. When I last started in 2020, I had chosen the Love2D framework which used Lua as the programming language. My original thoughts were that I gave up on gamedev because I was working in a language that would never be used outside of programming. There wasn&amp;rsquo;t enough in Lua itself to keep me fully interested in it, so I abandoned it.</description>
     </item>
   </channel>
 </rss>
