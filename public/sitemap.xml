@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://solivan.dev/</loc>
+    <lastmod>2024-11-06T10:28:03-08:00</lastmod>
+  </url><url>
     <loc>https://solivan.dev/blog/a-new-path/</loc>
     <lastmod>2024-11-06T10:28:03-08:00</lastmod>
   </url><url>
@@ -15,9 +18,6 @@
     <lastmod>2024-11-06T10:28:03-08:00</lastmod>
   </url><url>
     <loc>https://solivan.dev/tags/opinion/</loc>
-    <lastmod>2024-11-06T10:28:03-08:00</lastmod>
-  </url><url>
-    <loc>https://solivan.dev/</loc>
     <lastmod>2024-11-06T10:28:03-08:00</lastmod>
   </url><url>
     <loc>https://solivan.dev/tags/</loc>

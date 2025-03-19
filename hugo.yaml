@@ -1,6 +1,6 @@
 baseURL: https://solivan.dev/
 languageCode: en-us
-title: solivan.dev
+title: /home/danny
 theme: PaperMod
 
 enableEmoji: true
@@ -29,7 +29,7 @@ copyright: (c) Danny Solivan 2007-2024
 params:
 
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: solivan-Dev
+  title: SDEV
   author: Danny
 
   description: "Danny Solivan's personal website. Read about development, writing, and miscellaneous on the blog."
@@ -86,10 +86,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/solivan-dev-v2/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  #editPost:
+  #  URL: "https://github.com/nightconcept/solivan-dev-v2/content"
+  #  Text: "Suggest Changes" # edit text
+  #  appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Web-Dev on solivan.dev</title>
+    <title>Web-Dev on /home/danny</title>
     <link>https://solivan.dev/tags/web-dev/</link>
-    <description>Recent content in Web-Dev on solivan.dev</description>
+    <description>Recent content in Web-Dev on /home/danny</description>
     <image>
-      <title>solivan.dev</title>
+      <title>/home/danny</title>
       <url>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://solivan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
     <copyright>(c) Danny Solivan 2007-2024</copyright>
     <lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate>
@@ -19,8 +19,8 @@
       <link>https://solivan.dev/blog/how-i-made-this-site-2023/</link>
       <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://solivan.dev/blog/how-i-made-this-site-2023/</guid>
-      <description>Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.
-My goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023.</description>
+      <description>&lt;p&gt;Despite how long this site has been up, I actually started in March 2023. This is not an explicit tutorial, but you could probably follow along and get through building your own similar site if you wanted.&lt;/p&gt;
+&lt;p&gt;My goal of this guide is to give you the exact steps on how to build this site. My goal is to explain a little bit about what I know of the web (which I am not an expert by a longshot) and the design decisions I made to build this in 2023. If you want step-by-step guides, here are some that I used or referred to:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
