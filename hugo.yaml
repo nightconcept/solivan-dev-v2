@@ -9,7 +9,10 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-paginate: 10 # articles per page
+pagination:
+  disableAliases: false
+  pagerSize: 10 # articles per page
+  path: page
 
 minify:
   disableXML: true
