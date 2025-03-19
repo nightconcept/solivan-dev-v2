@@ -11,9 +11,16 @@
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <copyright>(c) Danny Solivan 2007-2024</copyright>
-    <lastBuildDate>Wed, 06 Nov 2024 10:28:03 -0800</lastBuildDate>
+    <copyright>(c) Danny Solivan 2007-2025</copyright>
+    <lastBuildDate>Wed, 19 Mar 2025 11:00:52 -0700</lastBuildDate>
     <atom:link href="https://solivan.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lessons Learned</title>
+      <link>https://solivan.dev/tags/lessons-learned/</link>
+      <pubDate>Wed, 19 Mar 2025 11:00:52 -0700</pubDate>
+      <guid>https://solivan.dev/tags/lessons-learned/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Opinion</title>
       <link>https://solivan.dev/tags/opinion/</link>

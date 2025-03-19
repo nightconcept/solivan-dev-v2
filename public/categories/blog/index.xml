@@ -11,9 +11,17 @@
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <copyright>(c) Danny Solivan 2007-2024</copyright>
-    <lastBuildDate>Wed, 06 Nov 2024 10:28:03 -0800</lastBuildDate>
+    <copyright>(c) Danny Solivan 2007-2025</copyright>
+    <lastBuildDate>Wed, 19 Mar 2025 11:00:52 -0700</lastBuildDate>
     <atom:link href="https://solivan.dev/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sweat the Small Things</title>
+      <link>https://solivan.dev/blog/sweat-the-small-things/</link>
+      <pubDate>Wed, 19 Mar 2025 11:00:52 -0700</pubDate>
+      <guid>https://solivan.dev/blog/sweat-the-small-things/</guid>
+      <description>&lt;p&gt;Today, I had an issue with my &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and &lt;a href=&#34;https://github.com/adityatelange/hugo-PaperMod&#34;&gt;PaperMod&lt;/a&gt; powered blog. Hugo and PaperMod are the only 2 dependencies in my blog and I figured I&amp;rsquo;d pull them up. I started with pulling up PaperMod, but had issues with minimum version. I thought I was on a new enough version of Hugo (0.138 from my recollection) on Windows, but the pushed site still did not render properly on Vercel.&lt;/p&gt;
+&lt;p&gt;I switched over to my Mac, ran &lt;code&gt;nix flake update&lt;/code&gt; and my site built and rendered properly on Vercel again. OK! Now I&amp;rsquo;m up and running again!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A New Path</title>
       <link>https://solivan.dev/blog/a-new-path/</link>
