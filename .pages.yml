@@ -1,0 +1,21 @@
+media:
+  input: static/assets
+  output: /assets
+content:
+  - name: content
+    label: content
+    path: content
+    type: collection
+    fields: [ title, date ]
+  - name: blog
+    label: blog
+    path: content/blog
+    type: collection
+    fields: [ title, date ]
+view:
+  fields: [ title, date, draft ] # title is the first entry and thus will be set to primary
+  sort: [ date, title, draft ]
+  default:
+    search: 'author:Danny'
+    sort: date
+    sort: desc
