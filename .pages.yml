@@ -2,14 +2,6 @@ media:
   input: static/assets
   output: /assets
 content:
-  - name: content
-    label: content
-    path: content
-    type: collection
-    filename: "{primary}.md"
-    fields: [ title, date ]
-    view:
-      primary: title
   - name: blog
     label: blog
     path: content/blog
@@ -17,4 +9,10 @@ content:
     filename: "{primary}.md"
     fields: [ title, date ]
     view:
+      fields: [ title ]
       primary: title
+      sort: [ date, title ]
+      default:
+        search: ''
+        sort: title
+        order: desc
