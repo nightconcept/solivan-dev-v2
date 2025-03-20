@@ -6,16 +6,15 @@ content:
     label: content
     path: content
     type: collection
+    filename: "{primary}.md"
     fields: [ title, date ]
+    view:
+      primary: title
   - name: blog
     label: blog
     path: content/blog
     type: collection
+    filename: "{primary}.md"
     fields: [ title, date ]
-view:
-  fields: [ title, date, draft ] # title is the first entry and thus will be set to primary
-  sort: [ date, title, draft ]
-  default:
-    search: 'author:Danny'
-    sort: date
-    sort: desc
+    view:
+      primary: title
