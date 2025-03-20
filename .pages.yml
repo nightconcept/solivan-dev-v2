@@ -9,7 +9,7 @@ content:
     filename: "{primary}.md"
     fields: [ title, date ]
     view:
-      fields: [ title ]
+      fields: [ date, primary, title, draft ]
       primary: title
       sort: [ date, title ]
       default:
