@@ -6,8 +6,9 @@ content:
     label: Pages
     path: src/content/pages
     type: collection
+    fields: [ title, description, pubDate, tags ]
     view:
-      fields: [ pubDate, primary, title, draft ]
+      fields: [ title, description, pubDate, tags ]
       primary: title
       sort: [ date, title ]
       default:
