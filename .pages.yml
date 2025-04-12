@@ -3,10 +3,9 @@ media:
   output: /assets
 content:
   - name: pages
-    label: pages
+    label: Pages
     path: src/content/pages
     type: collection
-    filename: "{primary}.md"
     view:
       fields: [ pubDate, primary, title, draft ]
       primary: title
