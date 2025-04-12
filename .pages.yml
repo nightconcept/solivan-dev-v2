@@ -2,14 +2,13 @@ media:
   input: static/assets
   output: /assets
 content:
-  - name: blog
-    label: blog
-    path: content/blog
+  - name: pages
+    label: pages
+    path: src/content/pages
     type: collection
     filename: "{primary}.md"
-    fields: [ title, date ]
     view:
-      fields: [ date, primary, title, draft ]
+      fields: [ pubDate, primary, title, draft ]
       primary: title
       sort: [ date, title ]
       default:
